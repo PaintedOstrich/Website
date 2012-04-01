@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>MappMe</title>
+    <meta name="author" content="Codier">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="resources/css/application.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div id="top">
+        <div id="banner-text">Map My Friends On The Map!</div>
+        <div id="iphone-gallery">
+          <ul id="pikame" >
+        		<li><img src="resources/img/3.jpg"/></a></li>
+        		<li><img src="resources/img/4.jpg"/></a></li>
+        	</ul>
+        </div>
+        <div><a class="appStore" target="_blank" href="http://itunes.apple.com/app/my-desk-all-in-one-desk/id334979425?mt=8"></a>
+        </div>
+      </div> <!-- /id=top -->
+      <div id="content">
+         <div class="row">
+           <div class="span4">
+            some content
+           </div>
+           <div class="span8">
+            yet more content
+           </div>
+         </div>
+      </div><!-- /id=content -->
+      <div id="bottom">
+        bottom text here
+      </div>
+      <footer class="row">
+        <ul>
+    		    <li><a href="http://www.bitolithic.com" rel="external" target="_blank">• Blog •</a></li>
+    		    <li><a href="http://www.twitter.com/bitolithic" rel="external" target="_blank">• Twitter •</a></li>
+    		    <li><a href="http://comiczeal.tenderapp.com" rel="external" target="_blank">• Support •</a></li>
+    		    <li><a href="http://comiczeal.tenderapp.com" rel="external" target="_blank">• Developers •</a></li>
+    		    <li><a href="http://comiczeal.tenderapp.com" rel="external" target="_blank">• More •</a></li>
+        </ul>
+        <div id="trademark">© 2012 Painted Ostrich Studio. All Rights Reserved.</div>
+      </footer>
+    </div> <!-- /container -->
+  </body>
+  
+  <script type="text/javascript" src="/js/lib/jquery-1.7.2.js"></script>
+  <script type="text/javascript" src="/js/plugins/jquery.pikachoose.js"></script>
+  <script language="javascript">
+		$(document).ready(function (){
+				$("#pikame").PikaChoose();
+			});
+	</script>
+</html>
+

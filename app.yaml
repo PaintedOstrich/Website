@@ -1,0 +1,21 @@
+application: paintedostrichstudio
+version: 1
+runtime: python
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /resources/css
+  static_dir: assets/resources/css
+- url: /resources/img
+  static_dir: assets/resources/img
+
+- url: /js
+  static_dir: assets/js
+
+- url: /
+  static_files: assets/index.html
+  upload: assets/index.html
+
+

@@ -1,0 +1,104 @@
+@import "bootstrap/bootstrap.less";
+
+@bright-blue: #00B8E6;
+@light-bray: #EEE;
+body {
+  background-color: @light-bray;
+}
+
+div #top {
+  background: url(../img/google-map.jpg) repeat-x;
+  background-size:80% 70%;
+  width: 100%;
+  height: 35em;
+  position: relative;
+
+  #banner-text {
+    font-size: 3em;
+    color: @bright-blue;
+    position: absolute;
+    top: 3.5em;
+    left: -0.5em;
+    -webkit-transform: rotate(-25deg); 
+    -moz-transform: rotate(-25deg);
+  }
+  
+  #iphone-gallery {
+    background: url(../img/iphone.png);
+    background-size:100% 100%;
+    width: 35em;
+    height: 35em;
+    position: absolute;
+    left: 65%;
+    top: 3%;
+    ul #pikaname {
+      li img{
+        width: 4em;
+        height: 10em;
+      }
+    }
+  }
+  
+  .appStore {
+    background: url(../img/appStore.png) no-repeat;
+    background-size: 100% 100%;
+    width: 140px;
+    height: 60px;
+    float: left;
+    display: block;
+    position: absolute;
+    top: 80%;
+  }
+}
+
+footer {
+  min-height: 130px;
+  margin: auto;
+  padding: 45px 0;
+  ul {
+    list-style: none;
+    li {
+      float: left;
+      padding-left: 6em;
+    }
+    width:80%;
+    margin: auto;
+  }
+  #trademark {
+    margin: 60px 0 0;
+    text-align: center;
+    font: 14px/20px "Terminal Dosis",sans-serif;
+    color: #666;
+  }
+}
+
+/**
+ * PikaChoose photo gallery css
+ */
+.pikachoose {
+  width: 520px; 
+  margin: 0 auto;
+}
+.pika-stage {
+  position: absolute; 
+  width: 190px; 
+  height:270px;
+  top: 94px;
+  left: 132px;
+}
+.pika-stage .pika-aniwrap, .pika-stage .main-image {
+  position: absolute; top: 0; left: 0;
+}
+.pika-stage .pika-aniwrap{
+  width:100%;
+}
+.pika-stage .pika-ani {
+  position:relative;display: none;z-index:2;margin:0 auto;
+}
+.pika-stage img {
+  border:0;height:100%; width: 100%;
+}
+.pika-textnav, .pika-imgnav, .pick-counter {display:none;}
+#pikame{display:none;}
+
+
