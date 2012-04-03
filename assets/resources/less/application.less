@@ -1,36 +1,49 @@
-@import "bootstrap/bootstrap.less";
+//CSS resets
+body {
+padding: 0;
+margin: 0;
+}
+h1, h2, h3, h4, h5, h6, ul, li, em, strong, pre, code {
+padding: 0;
+margin: 0;
+line-height: 1em;
+font-size: 100%;
+font-weight: normal;
+font-style: normal;
+}
+table {
+font-size: inherit;
+font: 100%;
+}
+img {
+border: 0;
+}
+p {
+margin: 1em 0;
+}
 
+
+//Our proper css classes
 @bright-blue: #00B8E6;
 @light-bray: #EEE;
 body {
-  background-color: @light-bray;
+  background: #4C4846 url(../img/bg.gif) repeat 0 0;
 }
 
-div #top {
-  background: url(../img/google-map.jpg) repeat-x;
-  background-size:80% 70%;
-  width: 100%;
-  height: 35em;
-  position: relative;
+div.top {
+  width: 980px;
+  min-height: 2em;
+}
 
-  #banner-text {
-    font-size: 3em;
-    color: @bright-blue;
-    position: absolute;
-    top: 3.5em;
-    left: -0.5em;
-    -webkit-transform: rotate(-25deg); 
-    -moz-transform: rotate(-25deg);
-  }
-  
-  #iphone-gallery {
-    background: url(../img/iphone.png);
-    background-size:100% 100%;
+.container {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  .iphone-gallery {
+    background: url(../img/iphone.png) no-repeat top center;
     width: 35em;
     height: 35em;
-    position: absolute;
-    left: 65%;
-    top: 3%;
     ul #pikaname {
       li img{
         width: 4em;
@@ -38,23 +51,71 @@ div #top {
       }
     }
   }
-  
-  .appStore {
-    background: url(../img/appStore.png) no-repeat;
-    background-size: 100% 100%;
-    width: 140px;
-    height: 60px;
-    float: left;
-    display: block;
+  .text-container {
     position: absolute;
-    top: 80%;
+    left: 30em;
+    top: 1em;
+    h1 {
+      width: 400px;
+      height: 110px;
+      margin: 0 0 0 20px;
+      font-family: 'Dosis', sans-serif;
+      font-weight: 800;
+      font-size: 80px;
+      color: #33598F;
+    }
+    
+    .description {
+      width: 400px;
+      margin: 0 0 0 20px;
+      font-family: 'Dosis', sans-serif;
+      font-weight: 600;
+    }
+    
+    ul {
+      margin-top: 40px;
+      width: 400px;
+      li {
+        margin: 0 0 14px;
+        font: 17px/20px "Dosis",sans-serif;
+        letter-spacing: 0.04em;
+        font-weight: 500;
+      }
+    }
+    
+    .map-image {
+      height: 15em;
+      width: 15em;
+      float: right;
+      background: url(../img/map-with-pin.png) no-repeat;
+      background-size: 100%;
+      transform: rotate(30deg);
+      -ms-transform: rotate(-30deg); /* IE 9 */
+      -webkit-transform: rotate(-30deg); /* Safari and Chrome */
+      -o-transform: rotate(-30deg); /* Opera */
+      -moz-transform: rotate(-30deg); /* Firefox */
+    }
+    
+    .appStore {
+      background: url(../img/appStore.png) no-repeat;
+      background-size: 100%;
+      width: 140px;
+      height: 60px;
+      margin-top: 90px;
+      float: left;
+    }
   }
 }
 
-footer {
-  min-height: 130px;
-  margin: auto;
-  padding: 45px 0;
+
+
+.footer {
+  padding: 25px 0;
+  width: 100%;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  box-shadow: inset 0 0 8px 10px rgba(0,0,0,0.8);
+  background: #202020 url(../img/bkg-pattern-blackDenim.jpg) 0 0 repeat;
   ul {
     list-style: none;
     li {
@@ -64,8 +125,7 @@ footer {
     width:80%;
     margin: auto;
   }
-  #trademark {
-    margin: 60px 0 0;
+  .trademark {
     text-align: center;
     font: 14px/20px "Terminal Dosis",sans-serif;
     color: #666;
@@ -81,10 +141,10 @@ footer {
 }
 .pika-stage {
   position: absolute; 
-  width: 190px; 
-  height:270px;
-  top: 94px;
-  left: 132px;
+  width: 230px; 
+  height:350px;
+  top: 96px;
+  left: 142px;
 }
 .pika-stage .pika-aniwrap, .pika-stage .main-image {
   position: absolute; top: 0; left: 0;
